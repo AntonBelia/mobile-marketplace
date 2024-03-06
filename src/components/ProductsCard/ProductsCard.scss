@@ -1,0 +1,80 @@
+@import "../../helpers/styles/mixins";
+
+.ProductCard {
+  padding: 23px;
+
+  border: 1px solid $elements-color;
+  transition: all $transition-time;
+
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  }
+
+  &:hover &__image{
+    transform: scale(1.1);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+  }
+
+  &__image {
+    @include squareSize(208px);
+
+    padding: 8px;
+    margin-bottom: 14px;
+
+    align-self: center;
+    object-fit: contain;
+    transition: all $transition-time;
+  }
+
+  &__name {
+    @include bodyText;
+
+    height: 42px;
+    margin-bottom: 7px;
+  }
+
+  &__prices {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__price {
+    @include sectionTitle_H2;
+
+    &--discount {
+      font-weight: 500;
+      text-decoration: line-through;
+      color: $secondary-color;
+    }
+  }
+
+  &__divider {
+    border-top: 1px solid $elements-color;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding-block: 16px;
+  }
+
+  &__field {
+    @include smallText;
+
+    display: flex;
+    justify-content: space-between;
+
+    &-value {
+      color: $primary-color;
+    }
+  }
+}

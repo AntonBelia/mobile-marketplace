@@ -1,0 +1,83 @@
+@import "../../helpers/styles/mixins";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $elements-color;
+
+  @include onTablet {
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    display: flex;
+    padding-left: 20px;
+
+    @include onTablet {
+      width: 100%;
+      border-bottom: 1px solid $elements-color;
+    }
+  }
+
+  &__logo {
+    @include logo;
+
+    height: 64px;
+  }
+
+  &__right {
+    display: flex;
+
+    @include onTablet {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__link-wrapper {
+    background: no-repeat center url(../../helpers/icons/icon_favorites.svg);
+
+    &--cart {
+      background-image: url(../../helpers/icons/icon_cart.svg);
+    }
+  }
+
+  &__link {
+    @include squareSize(64px);
+
+    position: relative;
+
+    display: flex;
+    border-left: 1px solid $elements-color;
+    transition: all $transition-time;
+
+    &:hover {
+      @include navigationUnderline;
+    }
+
+    &--is-active {
+      @include navigationUnderline;
+    }
+  }
+
+  &__image {
+    padding-inline: 25px;
+  }
+
+  &__count {
+    @include squareSize(12px);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background-color: $red-color;
+    border-radius: 50%;
+
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: center;
+    color: $white-color;
+  }
+}

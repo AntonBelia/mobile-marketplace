@@ -1,0 +1,78 @@
+@import "../../helpers/styles/mixins";
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  max-width: 1136px;
+  width: calc(100% - 40px);
+
+  &__content {
+    margin-inline: auto;
+    height: 96px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 -1px 0 0 $elements-color;
+  }
+
+  &__logo {
+    @include logo;
+  }
+
+  &__links {
+    height: 50%;
+    display: flex;
+    gap: 64px;
+
+    @include onTablet {
+      gap: 32px;
+    }
+
+    @include onPhone {
+      gap: 16px;
+    }
+  }
+
+  &__link {
+    @include navigationLink;
+
+    display: flex;
+    align-items: center;
+    transition: all $transition-time;
+
+    &:hover {
+      @include navigationUnderline;
+    }
+  }
+
+  &__to-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__to-top-text {
+    @include smallText;
+
+    @include onPhone {
+      display: none;
+    }
+  }
+
+  &__to-top-link {
+    @include squareSize(32px);
+
+    border: 1px solid $icons-color;
+    background: no-repeat center url(../../helpers/icons/icon_vector.svg);
+
+    transform: rotate(270deg);
+    cursor: pointer;
+    transition: all $transition-time;
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../helpers/styles/mixins";
+
+.Banners {
+  display: flex;
+  gap: 16px;
+  position: relative;
+
+  @include onPhone {
+    display: none;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    transition: transform $transition-time;
+  }
+
+  &__banner {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  &__button {
+    width: 32px;
+
+    border: 1px solid $icons-color;
+    background: no-repeat center url(../../helpers/icons/icon_vector.svg);
+    cursor: pointer;
+    transition: all $transition-time;
+
+    &--left {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+
+  @include dots;
+}
