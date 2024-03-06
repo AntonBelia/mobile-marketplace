@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/mobile-marketplace/static/css/main.b66d31f9.css",
+    "main.js": "/mobile-marketplace/static/js/main.9158a9d6.js",
+    "static/media/Mont-Regular.otf": "/mobile-marketplace/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "/mobile-marketplace/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "/mobile-marketplace/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "static/media/icon_cart.svg": "/mobile-marketplace/static/media/icon_cart.1962e42406793fa66f0d.svg",
+    "static/media/icon_favorites.svg": "/mobile-marketplace/static/media/icon_favorites.dbd19c030c984812b400.svg",
+    "static/media/icon_logo.svg": "/mobile-marketplace/static/media/icon_logo.13ce922e1b9e8d8894f4.svg",
+    "static/media/icon_home.svg": "/mobile-marketplace/static/media/icon_home.d4c29e4f137b3a79235a5293536d71a0.svg",
+    "static/media/icon_search.svg": "/mobile-marketplace/static/media/icon_search.66a1fd869fd5e9551d9b.svg",
+    "static/media/icon_favorites_selected.svg": "/mobile-marketplace/static/media/icon_favorites_selected.d554a185325e4fb06092.svg",
+    "static/media/icon_cross.svg": "/mobile-marketplace/static/media/icon_cross.ab8ba6b8a2b2e909c744.svg",
+    "static/media/icon_cross_gray.svg": "/mobile-marketplace/static/media/icon_cross_gray.7db15e550f17ca8b354e.svg",
+    "static/media/icon_plus.svg": "/mobile-marketplace/static/media/icon_plus.dea157243cc9d361ac05.svg",
+    "static/media/icon_vector.svg": "/mobile-marketplace/static/media/icon_vector.2a072ff1bf1fd396b30e9dec3a108dcb.svg",
+    "static/media/icon_vector_disabled.svg": "/mobile-marketplace/static/media/icon_vector_disabled.2a072ff1bf1fd396b30e9dec3a108dcb.svg",
+    "index.html": "/mobile-marketplace/index.html",
+    "static/media/icon_minus_gray.svg": "/mobile-marketplace/static/media/icon_minus_gray.fa9be0217c5b484c0252.svg",
+    "static/media/icon_minus.svg": "/mobile-marketplace/static/media/icon_minus.cecb4be39afa7b933ec1.svg",
+    "main.b66d31f9.css.map": "/mobile-marketplace/static/css/main.b66d31f9.css.map",
+    "main.9158a9d6.js.map": "/mobile-marketplace/static/js/main.9158a9d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b66d31f9.css",
+    "static/js/main.9158a9d6.js"
+  ]
+}
